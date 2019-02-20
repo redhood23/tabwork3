@@ -129,6 +129,16 @@ line(218, 205, 185, 208);
 
 
  
+ // mouseX and mouseY
+
+strokeWeight(3);
+stroke(57, 0, 214);
+fill(0, 210, 247);
+
+draw = function() {
+    ellipse(mouseX, mouseY, 30, 30);
+    
+};
  
     
     
@@ -136,8 +146,8 @@ line(218, 205, 185, 208);
     
     
     
-    console.log("X:"+ mouseX);
-    console.log("Y:"+ mouseY);
+//     console.log("X:"+ mouseX);
+//     console.log("Y:"+ mouseY);
     
     
     
