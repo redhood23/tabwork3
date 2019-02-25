@@ -52,6 +52,12 @@ function draw(){
 //    pop();
 //    push();
     
+    //head
+// 
+push();
+    translate(width/3, height/3);
+    rotate(frameCount / 1000);
+
     
 //     translate(width/8,height/8);
 //    fill(255,200,160);
@@ -107,11 +113,12 @@ line(298, 119, 276, 133);
 fill(5, 5, 5);
 ellipse(160, 131, 30, 30);
 fill(245, 245, 245);
-ellipse(156, 125, 10, 10);
+ellipse(map(mouseX,0,width, 156, 165), 125, 10, 10);
 fill(5, 5, 5);
 ellipse(246, 130, 30, 30);
 fill(245, 245, 245);
-ellipse(242, 125, 10, 10);
+ellipse(map(mouseX,0,width,242,251 ), 125, 10, 10);
+    
 
 //nose
 fill(224, 194, 162);
@@ -130,15 +137,13 @@ line(218, 205, 185, 208);
 
  
  // mouseX and mouseY
-
+pop();
 strokeWeight(3);
 stroke(57, 0, 214);
 fill(0, 210, 247);
-
-draw = function() {
-    ellipse(mouseX, mouseY, 30, 30);
+ellipse(mouseX, mouseY, 30, 30);
     
-};
+
  
     
     
